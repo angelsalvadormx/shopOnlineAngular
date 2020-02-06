@@ -1,0 +1,16 @@
+<section class="main-container">
+    <h3>Products</h3>
+    <main>
+        <section>
+            <ul>
+                <li (click)="filterProducts('all')">All products</li>
+                <li (click)="filterProducts('food')">Food</li>
+                <li (click)="filterProducts('clother')">Clother</li>
+                <li (click)="filterProducts('electronics')">Electronics</li>
+            </ul>
+        </section>
+        <section class="container-products">
+            <app-product *ngFor="let product of productsToShow" [product] = "product"></app-product>
+        </section>
+    </main>
+</section>

@@ -1,0 +1,21 @@
+#header > ul,
+#header{
+    width: 100%;
+    padding: 0px 10px;    
+    display: flex;
+    align-items: center;
+    background-color: aqua
+}
+
+#header > ul{
+    list-style: none;
+    display: flex;
+}
+#header > ul > li{
+    padding: 18px 25px;
+    outline: none;
+    cursor: pointer;
+}
+#header > ul > li:hover{
+   background-color: #02e8e8;
+}
