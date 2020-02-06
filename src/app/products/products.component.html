@@ -1,5 +1,8 @@
 <section class="main-container">
     <h3>Products</h3>
+    <p>
+        The number of products clicked is: {{increment}}
+    </p>
     <main>
         <section>
             <ul>
@@ -10,7 +13,8 @@
             </ul>
         </section>
         <section class="container-products">
-            <app-product *ngFor="let product of productsToShow" [product] = "product"></app-product>
+            <app-product *ngFor="let product of productsToShow" [product] = "product" (OnClick)="incrementVariable()">
+            </app-product>
         </section>
     </main>
 </section>

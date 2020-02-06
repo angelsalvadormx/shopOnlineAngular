@@ -9,6 +9,7 @@ import { Product } from './product.model';
 export class ProductsComponent implements OnInit {
   public products: Array<Product> = []; 
   public productsToShow: Array<Product> = [];
+  public increment: number = 0;
   constructor() { }
 
   ngOnInit() {
@@ -37,5 +38,9 @@ export class ProductsComponent implements OnInit {
       return;
     }
     this.productsToShow = this.products.filter(product => product.type === filtro)    
+  }
+  public incrementVariable(){
+    this.increment++;
+    
   }
 }
